@@ -37,7 +37,11 @@ Credit card fraud is a serious problem — but fraud cases are extremely rare (l
 
 ## 📊 Dataset Features
 
-The dataset contains **284,807 transactions** with **31 columns**. The `creditcard.csv` file is included in this repository. Original source: [Credit Card Fraud Detection — Kaggle](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
+The dataset contains **284,807 transactions** with **31 columns**.
+
+> ⚠️ The `creditcard.csv` file is **not included** in this repo because it exceeds GitHub's file size limit (144MB). Follow the setup steps below to download it automatically via the Kaggle API.
+
+Original source: [Credit Card Fraud Detection — Kaggle](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
 
 | Feature | Description |
 |---------|-------------|
@@ -56,8 +60,8 @@ The dataset contains **284,807 transactions** with **31 columns**. The `creditca
 credit-card-fraud-detection/
 │
 ├── credit_card_fraud_detection.ipynb   # Main Jupyter notebook
-├── creditcard.csv                      # Dataset (download from Kaggle)
 ├── requirements.txt                    # Python dependencies
+├── .gitignore                          # Excludes creditcard.csv from Git
 └── README.md                           # Project documentation
 ```
 
@@ -65,16 +69,23 @@ credit-card-fraud-detection/
 
 ## 🚀 Getting Started
 
-### Prerequisites
+### Option A — Google Colab (Recommended, No Setup Needed)
 
-- Python 3.8+
-- pip
+1. Open the notebook in Google Colab
+2. Run **Cell 0** (the setup cell) — it will ask you to upload your `kaggle.json`
+3. It will automatically download the dataset and you're ready to go
 
-### Installation
+**How to get your `kaggle.json`:**
+- Go to [https://www.kaggle.com](https://www.kaggle.com)
+- Click your profile picture → **Settings**
+- Scroll to **API** → Click **Create New Token**
+- A `kaggle.json` file will download to your computer
+
+### Option B — Run Locally
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/credit-card-fraud-detection.git
+   git clone https://github.com/rohannp02y/credit-card-fraud-detection.git
    cd credit-card-fraud-detection
    ```
 
@@ -83,12 +94,14 @@ credit-card-fraud-detection/
    pip install -r requirements.txt
    ```
 
-3. **Launch Jupyter Notebook**
+3. **Download the dataset manually** from Kaggle and place `creditcard.csv` in the project folder
+   - [https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
+
+4. **Launch Jupyter Notebook**
    ```bash
    jupyter notebook credit_card_fraud_detection.ipynb
    ```
-
-> **Google Colab users:** The notebook loads the CSV directly from GitHub — no uploads needed, just run all cells.
+   > The setup cell (Cell 0) will detect that `creditcard.csv` already exists and skip the download automatically.
 
 ---
 
@@ -160,6 +173,7 @@ or
 - **Python** — Core language
 - **Pandas / NumPy** — Data manipulation
 - **scikit-learn** — Logistic Regression, train/test split, accuracy score
+- **Kaggle API** — Dataset download
 
 ---
 
